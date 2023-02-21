@@ -1,0 +1,65 @@
+/* Import Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400&display=swap');
+/* End */
+
+::-moz-selection {
+  background: #a7d7af;
+}
+
+::selection {
+  background: #a7d7af;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 50px;
+    color: #716060;
+    margin: 5;
+    padding: 20;
+    text-align: center;
+  }
+
+body {
+  background-color: #E7ECFF;
+}
+
+h2 {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 17.5px;
+  text-align: center;
+  color: #716060;
+}
+
+h3 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: #9d8553;
+}
+
+a:link {
+  text-decoration: none;
+  color: #9d8553;
+}
+a:visited, a:active {
+  text-decoration: none;
+  color: #647278;
+}
+a:hover {
+  text-decoration: none;
+  color: #e58a8a;
+}
+
+img {
+  max-width: 95%;
+}
+
+.disable-selection {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

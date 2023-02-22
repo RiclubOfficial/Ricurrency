@@ -1,3 +1,4 @@
+
 .logo {
     position: relative;
   }
@@ -119,3 +120,125 @@
     border-radius: 7.5px;
     border: 0px;
   }
+
+.logo {
+  position: relative;
+}
+
+.logo:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.login-input-field {
+  font-family: 'Bitter';
+  text-align: center;
+  font-size: 30px;
+  max-width: 95%;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 25px;
+}
+
+.input-icons i {
+  position: absolute;
+}
+          
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+  size: 200%;
+}
+          
+.icon {
+  padding: 17px;
+  color: grey;
+  min-width: 100px;
+  text-align: center;
+}
+          
+.input-field {
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+}
+
+.login-input-field {
+  border-radius: 15px;
+  border: 0px;
+  height: 50px;
+  background-color: #bdc1f9;
+}
+
+.login {
+  height: 50px;
+  font-size: 25px;
+  font-family: 'Montserrat';
+  font-weight: 900;
+  border-radius: 15px;
+  border: 0px;
+  width: 200px;
+  background-color: #606fb850;
+  max-width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  transition: background-color 200ms linear;
+}
+
+.login:hover {
+  background-color: #9f9fa8
+  
+}
+
+.no-account {
+  color: #3b3b3b;
+  text-align: center;
+}
+
+.forgot-pw{
+  font-size: 25px;
+  font-family: 'Montserrat';
+  font-weight: 900;
+  border-radius: 15px;
+  background-color: #606fb850;
+  color: #000000;
+  border: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 200ms linear;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 50px;
+  max-width: 95%;
+  max-height: 20%;
+  width: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.forgot-pw:hover {
+  background-color: #9f9fa8
+}
+
+.modal-header {
+  background-color: #f4c8cf;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  
+}
+
+.modal-content {
+  border-radius: 7.5px;
+  border: 0px;
+}

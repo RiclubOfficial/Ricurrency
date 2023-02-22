@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Admin - Ricurrency</title>
+	</head>
+	
+	<link rel="stylesheet" href="/css/global.css">
+	<link rel="stylesheet" href="/css/login.css">
+	<script>
+		var params=window.location.href.split('?')[1]
+		var name=params.split('&')[0].split('=')[1]
+		var value=params.split('&')[1].split('=')[1]
+		if (name !== "") {
+			if (value !== "") {
+				if (typeof(Storage) !== "undefined") {
+					localStorage.setItem(name, value)
+				}
+				
+				else {
+					document.write("No local Storage Available")
+				}
+			}
+		}
+		
+	</script>
+	<h1>Temporary Admin Panel</h1>
+	<form>
+		<form action="/admin.html" method="get">
+			<input class="login-input-field" type="text" name="username" placeholder="Name">
+
+			<pre></pre>
+
+			<input class="login-input-field" type="password" name="password" placeholder="Value" id="password">
+
+			<pre></pre>
+
+			<input class="login" type="submit" value="Submit">
+
+		</form>
+	</form>
+</html>
+
+<center><button class="login" onclick="window.location.href = '/clear.html';">Clear</button></center>
+
+<script>
+document.write(localStorage.getItem("/49.245.1.60"));
+</script>

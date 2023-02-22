@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<script>
+	var url = window.location.href;
+	if (url.includes('?')) {
+		var params = url.split('?')[1];
+		var username = params.split('&')[0]
+		var temp = username.split('=')[1]
+		var username = temp;
+		var password = params.split('&')[1]
+		var temp = password.split('=')[1]
+		var password = temp.substring(0, str.length - 1);
+		if (typeof (Storage) !== "undefined") {
+			var correct_password = localStorage.getItem(username);
+			if (correct_password == null) {
+				var toshownext = "Invalid username"
+				document.write(toshownext)
+				window.location.href = '/login.html'
+			}
+			else {
+				if (correct_password !== password) {
+					var toshownext = "Invalid username or password"
+					window.location.href = '/login.html'
+				}
+			}
+		}
+		else {
+			document.write("Sorry, we couldn't process your request")
+		}
+	}
+	
+	else {
+		window.location.href = '/login.html'
+	}
+	
+</script>
+<script>
+document.write("yay")
+</script>
+
+<script>
+	localStorage.setItem('/'+json.ip, Username);
+</script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+</html>

@@ -1,3 +1,4 @@
+# redirects for 404
 [[redirects]]
   from = "/*"
   to = "/404.html"

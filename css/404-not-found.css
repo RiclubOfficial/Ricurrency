@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
   margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
 }
 body{
   height: 100vh;
-  background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
+  background: -webkit-repeating-linear-gradient(-45deg, #bdc1f9, #41b48e);
   background-size: 400%;
 }
 #error-page{
@@ -22,6 +21,7 @@ body{
   justify-content: center;
   background: #fff;
   box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+	border-radius: 15px;
 }
 #error-page .content{
   max-width: 600px;
@@ -29,11 +29,10 @@ body{
 }
 
 .content h4{
-  font-size: 1.5em;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: #000;
-  font-size: 2em;
+  font-size: 32px;
   max-width: 600px;
   position: relative;
 }
@@ -51,26 +50,6 @@ body{
   font-size: 1.2em;
   color: #0d0d0d;
 }
-.content .btns{
-  margin: 25px 0;
-  display: inline-flex;
-}
-.content .btns a{
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-  border: 2px solid #69a6ce;
-  color: #69a6ce;
-  font-weight: 500;
-  padding: 10px 25px;
-  border-radius: 25px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-.content .btns a:hover{
-  background: #69a6ce;
-  color: #fff;
-}
 
 lottie-player{
   display: block;
@@ -79,9 +58,6 @@ lottie-player{
   margin-top: 50px;
 }
 
-.btns{
-  padding-bottom: 30px;
-}
 
 .back-to-home {
     height: 50px;

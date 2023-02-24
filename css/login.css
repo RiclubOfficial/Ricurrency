@@ -1,7 +1,8 @@
 body{
   height: 100vh;
   background: -webkit-repeating-linear-gradient(-0deg, #c0bde5, #e8e1c0, #c0afee, #8799f2, #c0afee, #e2cab6, #c7bbe8);
-  background-size: 500%;
+  background-size: 400%;
+  overscroll-behavior: none;
 }
 
 .logo {
@@ -108,7 +109,6 @@ form {
   width: 350px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 20px;
 }
 
 .forgot-pw:hover {
@@ -125,4 +125,8 @@ form {
 .modal-content {
   border-radius: 7.5px;
   border: 0px;
+}
+
+hr{
+  opacity:0;
 }

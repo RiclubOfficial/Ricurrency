@@ -1,6 +1,6 @@
 body{
   height: 100vh;
-  background: -webkit-repeating-linear-gradient(-45deg, #c0bde5, #e8e1c0, #c0afee, #8799f2, #c0afee, #e2cab6, #c7bbe8);
+  background: -webkit-repeating-linear-gradient(-0deg, #c0bde5, #e8e1c0, #c0afee, #8799f2, #c0afee, #e2cab6, #c7bbe8);
   background-size: 500%;
 }
 

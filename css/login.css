@@ -1,5 +1,24 @@
+body{
+  height: 100vh;
+  background: -webkit-repeating-linear-gradient(-45deg, #c0bde5, #e8e1c0, #c0afee, #8799f2, #c0afee, #e2cab6, #c7bbe8);
+  background-size: 400%;
+}
+
 .logo {
   position: relative;
+}
+
+.login-box {
+	background-color: #E7ECFF;
+	width: 500px;
+	border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  max-height: 95%;
 }
 
 .logo:after {
@@ -53,7 +72,7 @@ form {
   border-radius: 15px;
   border: 0px;
   height: 50px;
-  background-color: #bdc1f9;
+  background-color: #606fb850;
 }
 
 .login {

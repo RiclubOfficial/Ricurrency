@@ -1,3 +1,9 @@
+body{
+  height: 100vh;
+  background: -webkit-repeating-linear-gradient(-0deg, #c0bde5, #e8e1c0, #c0afee, #8799f2, #c0afee, #e2cab6, #c7bbe8);
+  background-size: 500%;
+}
+
 .logo {
   position: relative;
 }
@@ -53,7 +59,7 @@ form {
   border-radius: 15px;
   border: 0px;
   height: 50px;
-  background-color: #bdc1f9;
+  background-color: #606fb850;
 }
 
 .login {
@@ -102,6 +108,7 @@ form {
   width: 350px;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .forgot-pw:hover {

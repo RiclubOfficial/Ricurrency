@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  height: 100vh;
+  background: -webkit-repeating-linear-gradient(0deg, #bdc1f9, #41b48e);
+  background-size: 400%;
+}
+#error-page{
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  right: 15%;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	border-radius: 15px;
+  background:#ffffff;
+}
+#error-page .content{
+  max-width: 600px;
+  text-align: center;
+}
+
+.content h4{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 32px;
+  max-width: 600px;
+  position: relative;
+}
+.content h4:after{
+  position: absolute;
+  content: attr(data-text);
+  top: 0;
+  left: 0;
+  right: 0;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.back-to-home{
+  font-size: 37.5px;
+  font-family: 'Montserrat';
+  font-weight: 900;
+  border-radius: 20px;
+  background-color: #606fb850;
+  color: #000000;
+  border: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 200ms linear;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20x;
+  max-width: 95%;
+  max-height: 20%;
+  width: 350px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.back-to-home:hover {
+  background-color: #9f9fa8
+  
+}
+
+.content p{
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  color: #9d8553;
+}
+
+h2{
+  margin-bottom:20px;
+  font-family: 'Montserrat';
+  font-size: 52.5px;
+  font-weight: 800;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150px;
+  position: relative;
+  animation-name: error;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes error {
+  0%   {color: #755c5c;left:0px;}
+  20%  {color: #aa8f09;left:10px;}
+  40%  {color: #85985d;left:0px;}
+  60% {color: #4d8070;left:-10px;}
+  80% {color: #4b5b6c;left:0px;}
+  100% {color: #755c5c;left:0px;}
+}
+
+a:link {
+  text-decoration: none;
+  color: #a66dba;
+  
+}
+a:visited, a:active {
+  text-decoration: underline;
+  color: #647278;
+}
+a:hover {
+  text-decoration: none;
+  color: #e58a8a;
+}

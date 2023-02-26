@@ -10,6 +10,7 @@ body::-webkit-scrollbar {
 body{
   -ms-overflow-style: none;
   scrollbar-width: none;
+  overscroll-behavior: none;
 }
 
 ::-moz-selection {
@@ -67,4 +68,8 @@ img {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.spacer{
+  opacity:0;
 }

@@ -1,7 +1,100 @@
 /* Import Custom Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400&display=swap');
-/* End */
+
+
+/* Forms */
+form {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 25px;
+}
+
+.input-icons i {
+  position: absolute;
+}
+          
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+  size: 200%;
+}
+          
+.icon {
+  padding: 17px;
+  color: grey;
+  min-width: 100px;
+  text-align: center;
+}
+
+
+
+
+/* Input fields */
+.input-field {
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+}
+
+.input {
+  border-radius: 15px;
+  border: 0px;
+  height: 50px;
+  background-color: #606fb850;
+}
+
+.input {
+  font-family: 'Bitter';
+  text-align: center;
+  font-size: 30px;
+  max-width: 95%;
+}
+
+
+
+
+/* Submit button */
+.submit {
+  height: 50px;
+  font-size: 25px;
+  font-family: 'Montserrat';
+  font-weight: 900;
+  border: 0px;
+	border-radius: 15px;
+  width: 200px;
+  background-color: #606fb850;
+  max-width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  transition: background-color 200ms linear;
+}
+
+.submit:hover {
+  background-color: #9f9fa8
+}
+
+
+
+
+/* Background, highlight colour and disable scroll */
+.disable-selection {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.spacer{
+  opacity:0;
+}
+
+body{
+  height: 100vh;
+  background: -webkit-repeating-linear-gradient(-0deg, #c0bde5, #e8e1c0, #c0afee, #8799f2, #c0afee, #e2cab6, #c7bbe8);
+  background-size: 400%;
+}
 
 body::-webkit-scrollbar {
   display: none;
@@ -21,6 +114,10 @@ body{
   background: #a7d7af;
 }
 
+
+
+
+/* Text */
 h1 {
     font-family: 'Montserrat';
     font-weight: 900;
@@ -47,6 +144,10 @@ h3 {
   color: #9d8553;
 }
 
+
+
+
+/* Links */
 a:link {
   text-decoration: none;
   color: #9d8553;
@@ -60,16 +161,10 @@ a:hover {
   color: #e58a8a;
 }
 
+
+
+
+/* Image */
 img {
   max-width: 95%;
-}
-
-.disable-selection {
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.spacer{
-  opacity:0;
 }

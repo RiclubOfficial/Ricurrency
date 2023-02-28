@@ -1,91 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- ignore this google verification thing -->
-  <meta name="google-site-verification" content="nXveyjNWR5W90y33wNr9DxZN5oSvZ7aVvFSFe2VEHeM" />
-  <!-- end g verification -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/global.css">
-  <link rel="stylesheet" href="/css/login.css">
-  <link rel="icon" type="image/x-icon" href="/media/images/logo.png">
-  <script src="/js/login.js"></script>
+<!-- Head -->
+	<head>
+	<!-- Do not touch -->
+	  <meta charset="UTF-8">
+	  <meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge">
 
-  <title>Login - Ricurrency</title>
+	  <meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	  <meta
+			name="google-site-verification"
+			content="nXveyjNWR5W90y33wNr9DxZN5oSvZ7aVvFSFe2VEHeM"/>
+  <!-- End -->
+
+
+	<!-- Styles -->
+	  <link 
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous">
+		
+	  <link
+			rel="stylesheet"
+			href="/css/global.css">
+		
+	  <link
+			rel="stylesheet"
+			href="/css/login.css">
+	<!-- End -->
+
+
+	<!-- Image -->
+	  <link
+			rel="icon"
+			type="image/x-icon"
+			href="/media/images/logo.png">
+	  <script src="/js/login.js"></script>
+	<!-- End -->
+
+
+	<!-- Title -->
+  <title>
+		Login - Ricurrency
+	</title>
+	<!-- End -->
 </head>
+<!-- End -->
 
+<!-- Body -->
 <body>
 	<pre></pre>
-  <center>
-    <div class="logo disable-selection"><img src="/media/images/logo.png" width="300px"></div>
+
+	<!-- Logo -->
+  	<center>
+    <div class="logo disable-selection">
+			<img
+				src="/media/images/logo.png"
+				width="300px">
+		</div>
   </center>
+	<!-- End -->
+
+	<!-- Login form -->
+	  <form
+			action="/login-process.html"
+			method="get">
+			
+			<!-- Username field -->
+		    <input
+					class="input disable-selection"
+					type="text"
+					name="username"
+					placeholder="Username">
+			<!-- End -->
+			
+	    <pre></pre>
+			
+			<!-- Password field -->
+		    <input
+					class="input disable-selection"
+					type="password"
+					name="password"
+					placeholder="Password"
+		      id="password">
+			<!-- End -->
+			
+	    <pre></pre>
+	
+			<!-- Login Button -->
+		    <input
+					class="submit"
+					type="submit"
+					value="Login"
+					style="border-radius: 15px;">
+			<!-- End -->
+	  </form>
+	<!-- End -->
+
+	<!-- Register Link -->
+	  <a href="/index.html">
+	    <h2 class="register">No account? Register now</h2>
+	  </a>
+	<!-- End -->
 
 
-  <form action="/login-process.html" method="get">
+  <!-- Forgot password button -->
+	  <button
+			type="button"
+			style='width: 350px;'
+			class="submit disable-selection"
+			data-toggle="modal"
+			data-target="#exampleModalCenter">
+	    	Forgot your password?
+	  </button>
+	<!-- End -->
 
-    <input class="login-input-field disable-selection" type="text" name="username" placeholder="Username">
+  <!-- Forgot password popup -->
+	  <div
+			class="modal fade"
+			id="exampleModalCenter"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalCenterTitle"
+			aria-hidden="true">
+			
+	    <div
+				class="modal-dialog modal-dialog-centered"
+				role="document">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h2
+							class="modal-title w-100 text-center disable-selection"
+							id="exampleModalLongTitle">
+								Forgot your password?
+	          </h2>
+	        </div>
+	        <div class="modal-body">
+	          <h2>
+							Contact our staff to reset your password.
+						</h2>
+	        </div>
+	        <div class="modal-footer">
+	          <button
+							type="button"
+							class="submit disable-selection"
+							data-dismiss="modal"
+							style='border-radius: 15px;'>
+								OK
+						</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	<!-- End -->
 
-    <pre></pre>
-
-    <input class="login-input-field disable-selection" type="password" name="password" placeholder="Password"
-      id="password">
-
-    <pre></pre>
-
-    <input class="login" type="submit" value="Login">
-
-  </form>
-
-  <a href="/index.html">
-    <h2 class="register">No account? Register now</h2>
-  </a>
-
-  <!-- bootstrap modal -->
-  <!-- Button trigger modal -->
-
-  <button type="button" class="forgot-pw disable-selection" data-toggle="modal" data-target="#exampleModalCenter">
-    Forgot your password?
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title w-100 text-center disable-selection" id="exampleModalLongTitle">Forgot your password?
-          </h2>
-        </div>
-        <div class="modal-body">
-          <h2>Contact our staff to reset your password.</h2>
-        </div>
-        <div class="modal-footer">
-          <!-- to reuse login button styles, put class as login as well -->
-          <button type="button" class="login disable-selection" data-dismiss="modal">OK</button>
-        </div>
-      </div>
-    </div>
-  </div>
-<hr class="spacer" style="height:35px">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+	<!-- Do not touch -->
+		<hr
+			class="spacer"
+			style="height:35px">
+			  <script
+					src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			    crossorigin="anonymous"></script>
+			  <script
+					src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			    crossorigin="anonymous"></script>
+			  <script
+					src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+					integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+					crossorigin="anonymous"></script>
+	<!-- End -->
 </body>
+<!-- End -->
 
 </html>
-
-
-<script>
-	document.write(localstorage.getItem('abc'))
-</script>

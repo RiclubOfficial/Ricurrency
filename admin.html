@@ -27,21 +27,21 @@
 	<h1>Temporary Admin Panel</h1>
 	<form>
 		<form action="/admin.html" method="get">
-			<input class="login-input-field" type="text" name="username" placeholder="Name">
+			<input class="input" type="text" name="username" placeholder="Name">
 
 			<pre></pre>
 
-			<input class="login-input-field" type="password" name="password" placeholder="Value" id="password">
+			<input class="input" type="text" name="password" placeholder="Value" id="password">
 
 			<pre></pre>
 
-			<input class="login" type="submit" value="Submit">
+			<input style="border-radius: 15px;" class="submit" type="submit" value="Submit">
 
 		</form>
 	</form>
 </html>
 
-<center><button class="login" onclick="window.location.href = '/clear.html';">Clear</button></center>
+<center><button class="submit" style="border-radius: 15px;" onclick="window.location.href = '/clear.html';">Clear</button></center>
 
 <script>
 document.write(localStorage.getItem("abc"));
